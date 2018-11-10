@@ -95,4 +95,9 @@ public class DataManager : MonoBehaviour
         }
         return sQuestionString;
     }
+
+    public List<string> GetStringData()
+    {
+        return m_lisData;
+    }
 }
