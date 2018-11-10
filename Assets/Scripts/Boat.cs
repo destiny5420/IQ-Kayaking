@@ -14,6 +14,7 @@ public class Boat : MonoBehaviour {
 	public GameObject m_botArrow;
 	public LevelManager m_levelManager;
     [SerializeField] float m_fSpeed = 20.0f;
+    [SerializeField] Animator m_animator;
     bool m_bTrigger;
 
     float m_fDelayOpenTriggerClock;
@@ -59,6 +60,8 @@ public class Boat : MonoBehaviour {
 			StartCoroutine(DisplayArrow(m_botArrow));
 
 			m_levelManager.AdjustWaterSurfaceLevel(-1f);
+
+            m_animator.Play("Potato_All", 0, 0.1f);
         }
 
 		if (Input.GetKeyDown(KeyCode.RightShift))
@@ -69,6 +72,8 @@ public class Boat : MonoBehaviour {
 			StartCoroutine(DisplayArrow(m_topArrow));
 
 			m_levelManager.AdjustWaterSurfaceLevel(1f);
+
+            m_animator.Play("Potato_All", 0, 0.1f);
         }
 
         if (m_rigidbody2d.velocity.x > m_fSpeed)
@@ -101,6 +106,7 @@ public class Boat : MonoBehaviour {
             clsRandomBox.Hide();
 
             m_fDelayOpenTriggerClock = m_fDelayOpenTriggerTime;
+            GameLogic.GetInstance().ChangeQuestion();
         }
     }
 

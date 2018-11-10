@@ -36,8 +36,8 @@ public class Answer : MonoBehaviour
             m_img_iq_score.text = iq.ToString();
 		}
 
-		if (other.name == "Group_Potato")
-			Destroy(gameObject);
+        if (other.name == "Group_Potato")
+            m_spriteRenderModel.enabled = false;
 	}
 
     public void SetImage(Sprite r_sprite, bool v_corrent)

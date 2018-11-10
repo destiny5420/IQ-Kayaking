@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RandomBoxManager : MonoBehaviour 
 {
-    Vector3[] m_v3ArrayPos = new Vector3[5];
+    Vector3[] m_v3ArrayPos = new Vector3[8];
+    [SerializeField] RandomBoxController[] m_clsAryRandomBoxControllers;
 
     float m_fDelayMoveNextPointClock;
     const float m_fDelayMoveNextPointTime = 5.0f;
@@ -47,6 +48,9 @@ public class RandomBoxManager : MonoBehaviour
         if (iCurIndex == m_v3ArrayPos.Length)
             return;
 
+        for (int i = 0; i < m_clsAryRandomBoxControllers.Length; i++)
+            m_clsAryRandomBoxControllers[i].Show();
+
         transform.position = m_v3ArrayPos[iCurIndex];
         iCurIndex++;
     }
@@ -55,8 +59,11 @@ public class RandomBoxManager : MonoBehaviour
     {
         m_v3ArrayPos[0] = new Vector3(90.0f, 0.0f, 0.0f);
         m_v3ArrayPos[1] = new Vector3(220.0f, 0.0f, 0.0f);
-        m_v3ArrayPos[2] = new Vector3(270.0f, 0.0f, 0.0f);
-        m_v3ArrayPos[3] = new Vector3(360.0f, 0.0f, 0.0f);
-        m_v3ArrayPos[4] = new Vector3(450.0f, 0.0f, 0.0f);
+        m_v3ArrayPos[2] = new Vector3(340.0f, 0.0f, 0.0f);
+        m_v3ArrayPos[3] = new Vector3(420.0f, 0.0f, 0.0f);
+        m_v3ArrayPos[4] = new Vector3(520.0f, 0.0f, 0.0f);
+        m_v3ArrayPos[5] = new Vector3(678.0f, 0.0f, 0.0f);
+        m_v3ArrayPos[6] = new Vector3(777.0f, 0.0f, 0.0f);
+        m_v3ArrayPos[7] = new Vector3(930.0f, 0.0f, 0.0f);
     }
 }

@@ -27,11 +27,6 @@ public class QuestionController : MonoBehaviour
 
 	void Update () 
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SettingQuestionContent();
-        }
-
         if (m_bStartRandom == true)
         {
             if (m_fRandomClock > 0.0f)
