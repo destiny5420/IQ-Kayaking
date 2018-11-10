@@ -31,10 +31,7 @@ public class DataManager : MonoBehaviour
 
 	void Update () 
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SettingHistory();
-        }
+        
 	}
 
     void Create_Question()
@@ -86,7 +83,7 @@ public class DataManager : MonoBehaviour
         //Debug.Log(string.Format("=================== Setting complete "));
     }
 
-    string GetQuestion()
+    public string GetQuestion()
     {
         int iQuestionIndex = m_lisHistoryAnswer[m_iGetQuestionIndex];
         string sQuestionString = m_lisData[iQuestionIndex];

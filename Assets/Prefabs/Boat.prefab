@@ -412,6 +412,7 @@ MonoBehaviour:
   m_topArrow: {fileID: 1838593236524324}
   m_botArrow: {fileID: 1760120665037888}
   m_levelManager: {fileID: 0}
+  m_fSpeed: 20
 --- !u!212 &212031687673475904
 SpriteRenderer:
   m_ObjectHideFlags: 1

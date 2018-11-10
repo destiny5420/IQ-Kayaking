@@ -7,7 +7,7 @@ public class QuestionController : MonoBehaviour
 
 	void Start () 
     {
-		
+        SettingQuestionContent();
 	}
 	
     public void Init()
@@ -17,6 +17,12 @@ public class QuestionController : MonoBehaviour
 
 	void Update () 
     {
-		
-	}
+
+    }
+
+    void SettingQuestionContent()
+    {
+        string sQuestion = DataManager.GetInstance().GetQuestion();
+        m_txtQuestionContent.text = sQuestion;
+    }
 }
