@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+[System.Serializable]
+public struct DataStruct
+{
+    public Sprite[] m_spriteAry;
+}
+
 public class DataManager : MonoBehaviour
 {
     static DataManager m_clsDataManager;
@@ -11,6 +17,7 @@ public class DataManager : MonoBehaviour
     List<string> m_lisData;
     List<int> m_lisHistoryAnswer;
     int m_iGetQuestionIndex;
+    [SerializeField] DataStruct[] m_aryDataImages;
 
     void Awake()
     {
@@ -87,12 +94,15 @@ public class DataManager : MonoBehaviour
     {
         int iQuestionIndex = m_lisHistoryAnswer[m_iGetQuestionIndex];
         string sQuestionString = m_lisData[iQuestionIndex];
+        GameLogic.GetInstance().SettingAnserImage(iQuestionIndex, m_aryDataImages[iQuestionIndex].m_spriteAry);
+
         m_iGetQuestionIndex++;
         if (m_iGetQuestionIndex >= m_lisData.Count)
         {
             m_iGetQuestionIndex = 0;
             SettingHistory();
         }
+
         return sQuestionString;
     }
 

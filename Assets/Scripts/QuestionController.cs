@@ -51,9 +51,8 @@ public class QuestionController : MonoBehaviour
             m_fCD_Clock -= Time.deltaTime;
             if (m_fCD_Clock <= 0.0f)
             {
-                m_bStartRandom = false;
-                string sQuestion = DataManager.GetInstance().GetQuestion();
-                m_txtQuestionContent.text = sQuestion;
+                OnCDComplete();
+
             }
         }
     }
@@ -64,5 +63,12 @@ public class QuestionController : MonoBehaviour
         m_bStartRandom = true;
         m_fRandomClock = m_fRandomInteral;
         m_fCD_Clock = m_fCD_Time;
+    }
+
+    void OnCDComplete()
+    {
+        m_bStartRandom = false;
+        string sQuestion = DataManager.GetInstance().GetQuestion();
+        m_txtQuestionContent.text = sQuestion;
     }
 }

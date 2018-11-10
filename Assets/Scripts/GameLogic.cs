@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameLogic : MonoBehaviour 
 {
     static GameLogic instance;
-    public GameLogic GetInstance() { return instance; }
+    public static GameLogic GetInstance() { return instance; }
 
     [SerializeField] QuestionController m_clsQuestionController;
 
@@ -29,5 +29,10 @@ public class GameLogic : MonoBehaviour
     public void ChangeQuestion()
     {
         m_clsQuestionController.SettingQuestionContent();
+    }
+
+    public void SettingAnserImage(int v_index, Sprite[] r_spriteAry)
+    {
+        m_lisLevelBlocks[v_index].SettingAnserImage(r_spriteAry);
     }
 }

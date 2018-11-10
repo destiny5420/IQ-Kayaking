@@ -295,6 +295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_answerA: {fileID: 1035110935593210}
   m_answerB: {fileID: 1243274416314622}
+  m_clsAnswerA: {fileID: 114983863677931928}
+  m_clsAnswerB: {fileID: 114586248920219314}
 --- !u!114 &114586248920219314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_img_iq_bar: {fileID: 0}
   m_img_iq_score: {fileID: 0}
-  Correct: 1
+  Correct: 0
 --- !u!212 &212087982087305356
 SpriteRenderer:
   m_ObjectHideFlags: 1

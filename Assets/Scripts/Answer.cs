@@ -4,11 +4,22 @@ using System;
 
 public class Answer : MonoBehaviour 
 {
-
+    SpriteRenderer m_spriteRenderModel;
     [SerializeField] Image m_img_iq_bar;
     [SerializeField] Text m_img_iq_score;
 
 	public bool Correct;
+
+    void Start()
+    {
+        m_spriteRenderModel = GetComponent<SpriteRenderer>();
+        Init();
+    }
+
+    public void Init()
+    {
+        Correct = false;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
 	{
@@ -28,4 +39,12 @@ public class Answer : MonoBehaviour
 		if (other.name == "Group_Potato")
 			Destroy(gameObject);
 	}
+
+    public void SetImage(Sprite r_sprite, bool v_corrent)
+    {
+        m_spriteRenderModel.sprite = r_sprite;
+
+        if (v_corrent)
+            Correct = true;
+    }
 }

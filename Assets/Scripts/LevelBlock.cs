@@ -1,37 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class LevelBlock : MonoBehaviour {
 
 	public GameObject m_answerA;
 	public GameObject m_answerB;
 
-	private LevelManager m_levelManager
-	{
-		get
-		{
-			return transform.root.GetComponent<LevelManager>();
-		}
-	}
+    [SerializeField] Answer m_clsAnswerA;
+    [SerializeField] Answer m_clsAnswerB;
 
+    public void SettingAnserImage(Sprite[] r_spriteAry)
+    {
+        int iNum = Random.Range(0,2);
 
-	// private void OnBecameVisible() {
-
-	// 	var spriteWidth = GetComponent<SpriteRenderer>().bounds.size.x;
-	// 	var spawnLocation = new Vector3(transform.position.x + spriteWidth, transform.position.y, transform.position.z);
-
-	// 	var randLevelBlock = m_levelManager.GetRandomLevelBlock();
-
-	// 	var levelBlock = Instantiate(randLevelBlock, spawnLocation, transform.rotation);
-
-	// 	levelBlock.transform.parent = m_levelManager.transform;
-
-	// 	levelBlock.GetComponent<BuoyancyEffector2D>().surfaceLevel = m_levelManager.CurrentWaterSurfaceLevel;
-	// }
-
-	// private void OnBecameInvisible()
-	// {
-	// 	Destroy(gameObject);
-	// }
+        if (iNum % 2 == 0)
+        {
+            m_clsAnswerA.SetImage(r_spriteAry[0], true);
+            m_clsAnswerB.SetImage(r_spriteAry[1], false);
+        }
+        else
+        {
+            m_clsAnswerB.SetImage(r_spriteAry[0], true);
+            m_clsAnswerA.SetImage(r_spriteAry[1], false);
+        }
+    }
 }
