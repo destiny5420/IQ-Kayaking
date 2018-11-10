@@ -10,6 +10,7 @@ public class GameLogic : MonoBehaviour
     [SerializeField] QuestionController m_clsQuestionController;
 
     [SerializeField] List<LevelBlock> m_lisLevelBlocks;
+    int m_iCurIndex;
 
     void Awake()
     {
@@ -18,9 +19,14 @@ public class GameLogic : MonoBehaviour
 
     void Start () 
     {
-        
+        Init();
 	}
 	
+    void Init()
+    {
+        m_iCurIndex = 0;
+    }
+
 	void Update () 
     {
 		
@@ -31,8 +37,12 @@ public class GameLogic : MonoBehaviour
         m_clsQuestionController.SettingQuestionContent();
     }
 
-    public void SettingAnserImage(int v_index, Sprite[] r_spriteAry)
+    public void SettingAnserImage(Sprite[] r_spriteAry)
     {
-        m_lisLevelBlocks[v_index].SettingAnserImage(r_spriteAry);
+        m_lisLevelBlocks[m_iCurIndex].SettingAnserImage(r_spriteAry);
+        m_iCurIndex++;
+
+        if (m_iCurIndex >= m_lisLevelBlocks.Count)
+            m_iCurIndex = 0;
     }
 }

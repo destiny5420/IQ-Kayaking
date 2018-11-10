@@ -94,7 +94,7 @@ public class DataManager : MonoBehaviour
     {
         int iQuestionIndex = m_lisHistoryAnswer[m_iGetQuestionIndex];
         string sQuestionString = m_lisData[iQuestionIndex];
-        GameLogic.GetInstance().SettingAnserImage(iQuestionIndex, m_aryDataImages[iQuestionIndex].m_spriteAry);
+        GameLogic.GetInstance().SettingAnserImage(m_aryDataImages[iQuestionIndex].m_spriteAry);
 
         m_iGetQuestionIndex++;
         if (m_iGetQuestionIndex >= m_lisData.Count)
