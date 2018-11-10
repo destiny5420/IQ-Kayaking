@@ -247,8 +247,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734472371611788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -14.44}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.26, z: -9.1893}
+  m_LocalScale: {x: 0.47493, y: 0.47493, z: 0.47493}
   m_Children:
   - {fileID: 4058302177368666}
   - {fileID: 4849320435663866}
@@ -404,6 +404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e0f2a47b161456eb7aedee62245ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_image: {fileID: 0}
+  m_text: {fileID: 0}
   RUDDER_FORCE: 100
   m_topRudder: {fileID: 4058302177368666}
   m_botRudder: {fileID: 4849320435663866}
