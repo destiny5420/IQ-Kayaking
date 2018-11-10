@@ -1,30 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System;
 
+public class Answer : MonoBehaviour 
+{
 
-public class Answer : MonoBehaviour {
+    [SerializeField] Image m_img_iq_bar;
+    [SerializeField] Text m_img_iq_score;
 
 	public bool Correct;
 
-	private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
 	{
-		var Image = GameObject.Find("UI/Group_IQ/Image_Fill").GetComponent<Image>();
-		var Text = GameObject.Find("UI/Group_IQ/Text").GetComponent<Text>();
-
 		if (Correct)
 		{
-			Image.fillAmount += 0.1f;
-			var iq = Int32.Parse(Text.text) + 10;
-			Text.text = iq.ToString();
+            m_img_iq_bar.fillAmount += 0.1f;
+            var iq = Int32.Parse(m_img_iq_score.text) + 10;
+            m_img_iq_score.text = iq.ToString();
 		}
 		else
 		{
-			Image.fillAmount = Image.fillAmount -= 0.1f;
-			var iq = Int32.Parse(Text.text) - 10;
-			Text.text = iq.ToString();
+            m_img_iq_bar.fillAmount = m_img_iq_bar.fillAmount -= 0.1f;
+            var iq = Int32.Parse(m_img_iq_score.text) - 10;
+            m_img_iq_score.text = iq.ToString();
 		}
 
 		if (other.name == "Group_Potato")

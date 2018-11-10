@@ -1,6 +1,8 @@
 Temp/
 Library/
+Obj/
 Unity.*
 UnityPackageManager/
 .vs
 *.csproj
+*.sln
