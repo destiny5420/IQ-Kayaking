@@ -54,7 +54,7 @@ public class RandomBoxManager : MonoBehaviour
     void CreatePosData()
     {
         m_v3ArrayPos[0] = new Vector3(90.0f, 0.0f, 0.0f);
-        m_v3ArrayPos[1] = new Vector3(180.0f, 0.0f, 0.0f);
+        m_v3ArrayPos[1] = new Vector3(220.0f, 0.0f, 0.0f);
         m_v3ArrayPos[2] = new Vector3(270.0f, 0.0f, 0.0f);
         m_v3ArrayPos[3] = new Vector3(360.0f, 0.0f, 0.0f);
         m_v3ArrayPos[4] = new Vector3(450.0f, 0.0f, 0.0f);

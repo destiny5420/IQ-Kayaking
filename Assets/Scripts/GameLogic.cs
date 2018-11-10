@@ -9,6 +9,8 @@ public class GameLogic : MonoBehaviour
 
     [SerializeField] QuestionController m_clsQuestionController;
 
+    [SerializeField] List<LevelBlock> m_lisLevelBlocks;
+
     void Awake()
     {
         instance = this;
@@ -16,7 +18,7 @@ public class GameLogic : MonoBehaviour
 
     void Start () 
     {
-		
+        
 	}
 	
 	void Update () 
