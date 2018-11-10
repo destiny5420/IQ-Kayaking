@@ -7,7 +7,7 @@ public class QuestionController : MonoBehaviour
 
 	void Start () 
     {
-        SettingQuestionContent();
+        
 	}
 	
     public void Init()
