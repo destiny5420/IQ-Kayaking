@@ -20,7 +20,7 @@ public class QuestionController : MonoBehaviour
 
     }
 
-    void SettingQuestionContent()
+    public void SettingQuestionContent()
     {
         string sQuestion = DataManager.GetInstance().GetQuestion();
         m_txtQuestionContent.text = sQuestion;
