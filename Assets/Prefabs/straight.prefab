@@ -133,6 +133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_answerA: {fileID: 0}
   m_answerB: {fileID: 0}
+  m_clsAnswerA: {fileID: 0}
+  m_clsAnswerB: {fileID: 0}
 --- !u!212 &212255787785026672
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -195,5 +197,5 @@ BuoyancyEffector2D:
   m_LinearDrag: 2
   m_AngularDrag: 1
   m_FlowAngle: 0
-  m_FlowMagnitude: 20
+  m_FlowMagnitude: 10
   m_FlowVariation: 0

@@ -38,6 +38,12 @@ public class Boat : MonoBehaviour {
 
 	private void Update()
     {
+		if (m_rigidbody2d.velocity.x < 5)
+			m_rigidbody2d.velocity = new Vector2(5, m_rigidbody2d.velocity.y);
+
+		if (m_rigidbody2d.velocity.x > 15)
+			m_rigidbody2d.velocity = new Vector2(15, m_rigidbody2d.velocity.y);
+
         if (m_fDelayOpenTriggerClock > 0)
         {
             m_fDelayOpenTriggerClock -= Time.deltaTime;
@@ -56,10 +62,10 @@ public class Boat : MonoBehaviour {
         {
             //print("left shift was pressed");
 			m_rigidbody2d.AddForceAtPosition(m_faceDirection * RUDDER_FORCE, m_topRudder.position);
-			m_rigidbody2d.AddForceAtPosition(new Vector3(0, -1, 0) * RUDDER_FORCE / 2, m_topRudder.position);
+			m_rigidbody2d.AddForceAtPosition(new Vector3(0, -1, 0) * RUDDER_FORCE, m_topRudder.position);
 			StartCoroutine(DisplayArrow(m_botArrow));
 
-			m_levelManager.AdjustWaterSurfaceLevel(-1f);
+			m_levelManager.AdjustWaterSurfaceLevel(-0.5f);
 
             m_animator.Play("Potato_All", 0, 0.1f);
         }
@@ -68,16 +74,16 @@ public class Boat : MonoBehaviour {
         {
             //print("right shift was pressed");
 			m_rigidbody2d.AddForceAtPosition(m_faceDirection * RUDDER_FORCE, m_botRudder.position);
-			m_rigidbody2d.AddForceAtPosition(new Vector3(0, 1, 0) * RUDDER_FORCE / 2, m_topRudder.position);
+			m_rigidbody2d.AddForceAtPosition(new Vector3(0, 1, 0) * RUDDER_FORCE, m_topRudder.position);
 			StartCoroutine(DisplayArrow(m_topArrow));
 
-			m_levelManager.AdjustWaterSurfaceLevel(1f);
+			m_levelManager.AdjustWaterSurfaceLevel(0.5f);
 
             m_animator.Play("Potato_All", 0, 0.1f);
         }
 
-        if (m_rigidbody2d.velocity.x > m_fSpeed)
-            m_rigidbody2d.velocity = new Vector3(m_fSpeed, m_rigidbody2d.velocity.y);
+        // if (m_rigidbody2d.velocity.x > m_fSpeed)
+        //     m_rigidbody2d.velocity = new Vector3(m_fSpeed, m_rigidbody2d.velocity.y);
 
 		// speed
 		// m_image.fillAmount = m_rigidbody2d.velocity.x / 20.0f;
