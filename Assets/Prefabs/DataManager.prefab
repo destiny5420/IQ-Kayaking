@@ -79,3 +79,6 @@ MonoBehaviour:
   - m_spriteAry:
     - {fileID: 21300000, guid: 9c3148b988d4248c78560f82fcb17723, type: 3}
     - {fileID: 21300000, guid: 6c31424fd73a947ecb5e942180c5e091, type: 3}
+  - m_spriteAry:
+    - {fileID: 21300000, guid: 94bfb52b7b5334dbda9f8590e9d996dc, type: 3}
+    - {fileID: 21300000, guid: 3e931562c8d90405988997698a354c24, type: 3}

@@ -59,7 +59,9 @@ public class DataManager : MonoBehaviour
             "品客的LOGO是哪一個?",
             "C_urage－勇氣",
             "３ｘ５＋６ｘ２＝?",
-            "2018極客窩遊戲黑客松是11月幾日?"
+            "2018極客窩遊戲黑客松是11月幾日?",
+            "7-11的英文拼音哪的字母是小寫?",
+            "哪個字母在鍵盤上有凸起?",
         };
 
         m_lisHistoryAnswer = new List<int>();
