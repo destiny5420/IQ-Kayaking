@@ -6,7 +6,7 @@ public class Answer : MonoBehaviour
 {
     SpriteRenderer m_spriteRenderModel;
     [SerializeField] Image m_img_iq_bar;
-    [SerializeField] Text m_img_iq_score;
+    [SerializeField] Text m_txtScoreIQ;
 
 	public bool Correct;
 
@@ -19,26 +19,43 @@ public class Answer : MonoBehaviour
     public void Init()
     {
         Correct = false;
+        UpdateInfo();
     }
 
     void OnTriggerEnter2D(Collider2D other)
 	{
-		if (Correct)
-		{
-            m_img_iq_bar.fillAmount += 0.1f;
-            var iq = Int32.Parse(m_img_iq_score.text) + 10;
-            m_img_iq_score.text = iq.ToString();
-		}
-		else
-		{
-            m_img_iq_bar.fillAmount = m_img_iq_bar.fillAmount -= 0.1f;
-            var iq = Int32.Parse(m_img_iq_score.text) - 10;
-            m_img_iq_score.text = iq.ToString();
-		}
-
         if (other.name == "Group_Potato")
+        {
             m_spriteRenderModel.enabled = false;
+
+            if (Correct)
+                HandleCorrect();
+            else
+                HandleMistake();
+        }
 	}
+
+    void HandleCorrect()
+    {
+        DataManager.GetInstance().IncreaseIQ(10);
+        UpdateInfo();
+    }
+
+    void HandleMistake()
+    {
+        DataManager.GetInstance().DecreaseIQ(10);
+        UpdateInfo();
+    }
+
+    void UpdateInfo()
+    {
+        int iValueIQ = DataManager.GetInstance().GetValueIQ();
+        m_txtScoreIQ.text = string.Format(iValueIQ.ToString());
+        float fPrecent = iValueIQ / 180.0f;
+        m_img_iq_bar.fillAmount = fPrecent;
+
+        Debug.Log(string.Format("IQ value: {0} / Precent: {1}", iValueIQ, fPrecent));
+    }
 
     public void SetImage(Sprite r_sprite, bool v_corrent)
     {

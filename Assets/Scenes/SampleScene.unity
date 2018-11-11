@@ -320,6 +320,16 @@ Prefab:
       propertyPath: m_Name
       value: straight_answer
       objectReference: {fileID: 0}
+    - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0
@@ -1375,6 +1385,16 @@ Prefab:
       propertyPath: m_img_iq_score
       value: 
       objectReference: {fileID: 949713386}
+    - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0
@@ -1791,16 +1811,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
-        type: 2}
-      propertyPath: m_img_iq_bar
-      value: 
-      objectReference: {fileID: 740293583}
-    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
-        type: 2}
-      propertyPath: m_img_iq_score
-      value: 
-      objectReference: {fileID: 949713386}
     - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
         type: 2}
       propertyPath: m_img_iq_bar
@@ -1808,13 +1818,19 @@ Prefab:
       objectReference: {fileID: 740293583}
     - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
         type: 2}
-      propertyPath: m_img_iq_score
+      propertyPath: m_txtScoreIQ
       value: 
       objectReference: {fileID: 949713386}
-    - target: {fileID: 1559579729308268, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
-      propertyPath: m_Name
-      value: straight_answer
-      objectReference: {fileID: 0}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_img_iq_bar
+      value: 
+      objectReference: {fileID: 740293583}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0
@@ -2575,6 +2591,16 @@ Prefab:
       propertyPath: m_Name
       value: straight_answer
       objectReference: {fileID: 0}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
+    - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0
@@ -3178,6 +3204,16 @@ Prefab:
       propertyPath: m_Name
       value: straight_answer
       objectReference: {fileID: 0}
+    - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0
@@ -4827,6 +4863,16 @@ Prefab:
       propertyPath: m_Name
       value: straight_answer
       objectReference: {fileID: 0}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
+    - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0
@@ -6657,6 +6703,16 @@ Prefab:
       propertyPath: m_Name
       value: straight_answer
       objectReference: {fileID: 0}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
+    - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0
@@ -7796,6 +7852,16 @@ Prefab:
       propertyPath: m_Name
       value: straight_answer
       objectReference: {fileID: 0}
+    - target: {fileID: 114586248920219314, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
+    - target: {fileID: 114983863677931928, guid: a121a8a952af3424b8b85b821331eb20,
+        type: 2}
+      propertyPath: m_txtScoreIQ
+      value: 
+      objectReference: {fileID: 949713386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a121a8a952af3424b8b85b821331eb20, type: 2}
   m_IsPrefabAsset: 0

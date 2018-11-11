@@ -14,16 +14,21 @@ public class DataManager : MonoBehaviour
     static DataManager m_clsDataManager;
     public static DataManager GetInstance() { return m_clsDataManager; }
 
+    // Question
     List<string> m_lisData;
     List<int> m_lisHistoryAnswer;
     int m_iGetQuestionIndex;
     [SerializeField] DataStruct[] m_aryDataImages;
+
+    // IQ
+    int iCurValueForIQ;
 
     void Awake()
     {
         m_clsDataManager = this;
         DontDestroyOnLoad(this);
         Create_Question();
+        Init();
     }
 
     void Start () 
@@ -34,6 +39,7 @@ public class DataManager : MonoBehaviour
     void Init()
     {
         m_iGetQuestionIndex = 0;
+        iCurValueForIQ = 90;
     }
 
 	void Update () 
@@ -109,5 +115,20 @@ public class DataManager : MonoBehaviour
     public List<string> GetStringData()
     {
         return m_lisData;
+    }
+
+    public void IncreaseIQ(int v_value)
+    {
+        iCurValueForIQ += v_value;
+    }
+
+    public void DecreaseIQ(int v_value)
+    {
+        iCurValueForIQ -= v_value;
+    }
+
+    public int GetValueIQ()
+    {
+        return iCurValueForIQ;
     }
 }
