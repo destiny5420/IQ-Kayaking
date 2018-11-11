@@ -65,6 +65,7 @@ GameObject:
   - component: {fileID: 114074363811567104}
   - component: {fileID: 58316071221975858}
   - component: {fileID: 61377096624343126}
+  - component: {fileID: 114424889898903808}
   m_Layer: 0
   m_Name: straight_answer
   m_TagString: Untagged
@@ -313,6 +314,17 @@ MonoBehaviour:
   m_answerB: {fileID: 1243274416314622}
   m_clsAnswerA: {fileID: 114983863677931928}
   m_clsAnswerB: {fileID: 114586248920219314}
+--- !u!114 &114424889898903808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559579729308268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3f0470892674440b3d5e1efd1ab9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114586248920219314
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -41,8 +41,8 @@ public class Boat : MonoBehaviour {
 		if (m_rigidbody2d.velocity.x < 5)
 			m_rigidbody2d.velocity = new Vector2(5, m_rigidbody2d.velocity.y);
 
-		if (m_rigidbody2d.velocity.x > 15)
-			m_rigidbody2d.velocity = new Vector2(15, m_rigidbody2d.velocity.y);
+		if (m_rigidbody2d.velocity.x > 10)
+			m_rigidbody2d.velocity = new Vector2(10, m_rigidbody2d.velocity.y);
 
         if (m_fDelayOpenTriggerClock > 0)
         {
@@ -62,7 +62,7 @@ public class Boat : MonoBehaviour {
         {
             //print("left shift was pressed");
 			m_rigidbody2d.AddForceAtPosition(m_faceDirection * RUDDER_FORCE, m_topRudder.position);
-			m_rigidbody2d.AddForceAtPosition(new Vector3(0, -1, 0) * RUDDER_FORCE, m_topRudder.position);
+			transform.position = new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z);
 			StartCoroutine(DisplayArrow(m_botArrow));
 
 			m_levelManager.AdjustWaterSurfaceLevel(-0.5f);
@@ -74,7 +74,7 @@ public class Boat : MonoBehaviour {
         {
             //print("right shift was pressed");
 			m_rigidbody2d.AddForceAtPosition(m_faceDirection * RUDDER_FORCE, m_botRudder.position);
-			m_rigidbody2d.AddForceAtPosition(new Vector3(0, 1, 0) * RUDDER_FORCE, m_topRudder.position);
+			transform.position = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
 			StartCoroutine(DisplayArrow(m_topArrow));
 
 			m_levelManager.AdjustWaterSurfaceLevel(0.5f);
