@@ -33,7 +33,7 @@ public class DataManager : MonoBehaviour
 
     void Start () 
     {
-		
+        Init();
 	}
 	
     void Init()
@@ -62,6 +62,8 @@ public class DataManager : MonoBehaviour
             "2018極客窩遊戲黑客松是11月幾日? (10)(11)",
             "7-11的英文拼音哪的字母是小寫? (e)(n)",
             "哪個字母在鍵盤上有凸起? (H)(J)",
+            "蘋果的缺口是哪一邊? (左)(右)",
+            "√9 + √16 + √25 = ? (12)(14)",
         };
 
         m_lisHistoryAnswer = new List<int>();

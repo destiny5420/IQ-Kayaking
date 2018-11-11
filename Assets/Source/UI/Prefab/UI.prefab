@@ -120,6 +120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224523299043102648}
+  - component: {fileID: 114047679570238560}
   m_Layer: 5
   m_Name: UI_End
   m_TagString: Untagged
@@ -154,7 +155,7 @@ GameObject:
   - component: {fileID: 222206085166048900}
   - component: {fileID: 114232999941165048}
   m_Layer: 5
-  m_Name: Image_Bg
+  m_Name: img_bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,6 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224594965110785038}
+  - component: {fileID: 114911780639432296}
   m_Layer: 5
   m_Name: Group_IQ
   m_TagString: Untagged
@@ -290,7 +292,7 @@ GameObject:
   - component: {fileID: 114071287033794530}
   - component: {fileID: 114027213810631498}
   m_Layer: 5
-  m_Name: Button
+  m_Name: btn_return
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,7 +327,7 @@ GameObject:
   - component: {fileID: 114498418501611702}
   - component: {fileID: 114479268082397284}
   m_Layer: 5
-  m_Name: Text
+  m_Name: txt_score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,7 +458,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114071287033794530}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114047679570238560}
+        m_MethodName: OnReturnButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114046718935295730
@@ -494,6 +507,22 @@ MonoBehaviour:
   m_Text: '100
 
 '
+--- !u!114 &114047679570238560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215169195263476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27522ea5ce86e496ab62e9fffbae6454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_anim: {fileID: 95903543947211012}
+  m_imgBG: {fileID: 114232999941165048}
+  m_imgButton: {fileID: 114071287033794530}
+  m_btnReturn: {fileID: 114027213810631498}
+  m_txtScore: {fileID: 114498418501611702}
 --- !u!114 &114050279948148312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -881,6 +910,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114911780639432296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1378397429734414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb2165562c324740be7c13d2cd80ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_txtScore: {fileID: 114046718935295730}
 --- !u!114 &114941139322595332
 MonoBehaviour:
   m_ObjectHideFlags: 1

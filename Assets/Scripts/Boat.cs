@@ -20,6 +20,8 @@ public class Boat : MonoBehaviour {
     float m_fDelayOpenTriggerClock;
     float m_fDelayOpenTriggerTime = 3.0f;
 
+    bool m_bEnd;
+
 	private Rigidbody2D m_rigidbody2d
 	{
 		get
@@ -36,9 +38,17 @@ public class Boat : MonoBehaviour {
 		}
 	}
 
-	private void Update()
+    private void Start()
     {
-		if (m_rigidbody2d.velocity.x < 5)
+        m_bEnd = false;
+    }
+
+    private void Update()
+    {
+        if (m_bEnd)
+            return;
+
+        if (m_rigidbody2d.velocity.x < 5)
 			m_rigidbody2d.velocity = new Vector2(5, m_rigidbody2d.velocity.y);
 
 		if (m_rigidbody2d.velocity.x > 10)
@@ -113,6 +123,12 @@ public class Boat : MonoBehaviour {
 
             m_fDelayOpenTriggerClock = m_fDelayOpenTriggerTime;
             GameLogic.GetInstance().ChangeQuestion();
+        }
+
+        if (collision.name == "EndCollider")
+        {
+            m_bEnd = true;
+            GameLogic.GetInstance().ShowEndPanel();
         }
     }
 

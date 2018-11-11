@@ -4024,6 +4024,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4855118452035102, guid: 6206eb877bffb4dd5954f41b6012ea02,
     type: 2}
   m_PrefabInternal: {fileID: 619739849}
+--- !u!1 &620971621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620971624}
+  - component: {fileID: 620971623}
+  - component: {fileID: 620971622}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &620971622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620971621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &620971623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620971621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &620971624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620971621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &622061954
 Prefab:
   m_ObjectHideFlags: 0
@@ -4563,6 +4625,7 @@ Transform:
   - {fileID: 531963388}
   - {fileID: 669239215}
   - {fileID: 1645795608}
+  - {fileID: 1853807939}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11362,6 +11425,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4477034388364750, guid: fd3aad2f29f4d4b248fcf1fa92b358c3,
     type: 2}
   m_PrefabInternal: {fileID: 1782731760}
+--- !u!1 &1853807938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853807939}
+  - component: {fileID: 1853807940}
+  m_Layer: 0
+  m_Name: EndCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1853807939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853807938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 730108475}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1853807940
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853807938}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 7.470458}
+  m_EdgeRadius: 0
 --- !u!4 &1859494396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4477034388364750, guid: fd3aad2f29f4d4b248fcf1fa92b358c3,
@@ -11858,11 +11975,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114061477902291314, guid: 0d1af59d01a5244c68f38f3464d97667,
-        type: 2}
-      propertyPath: m_lisLevelBlocks.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4642947832765584, guid: 0d1af59d01a5244c68f38f3464d97667, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11900,6 +12012,16 @@ Prefab:
       propertyPath: m_clsQuestionController
       value: 
       objectReference: {fileID: 2077895872}
+    - target: {fileID: 114061477902291314, guid: 0d1af59d01a5244c68f38f3464d97667,
+        type: 2}
+      propertyPath: m_clsAnswerShowController
+      value: 
+      objectReference: {fileID: 2120539721}
+    - target: {fileID: 114061477902291314, guid: 0d1af59d01a5244c68f38f3464d97667,
+        type: 2}
+      propertyPath: m_clsEndPanelController
+      value: 
+      objectReference: {fileID: 2120539722}
     - target: {fileID: 114061477902291314, guid: 0d1af59d01a5244c68f38f3464d97667,
         type: 2}
       propertyPath: m_lisLevelBlocks.Array.data[0]
@@ -11940,11 +12062,6 @@ Prefab:
       propertyPath: m_lisLevelBlocks.Array.data[7]
       value: 
       objectReference: {fileID: 21360325}
-    - target: {fileID: 114061477902291314, guid: 0d1af59d01a5244c68f38f3464d97667,
-        type: 2}
-      propertyPath: m_clsAnswerShowController
-      value: 
-      objectReference: {fileID: 2120539721}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d1af59d01a5244c68f38f3464d97667, type: 2}
   m_IsPrefabAsset: 0
@@ -12805,6 +12922,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2120539720}
   m_Script: {fileID: 11500000, guid: 0b27aef31eb5f430aab64de8ccb17d8f, type: 3}
+--- !u!114 &2120539722 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114047679570238560, guid: 47751a7d21900405d9fa4f947417142c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2120539720}
+  m_Script: {fileID: 11500000, guid: 27522ea5ce86e496ab62e9fffbae6454, type: 3}
 --- !u!4 &2125011647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4740640326202206, guid: bc5d3b4facc7048ea91ee9b42ad0b174,

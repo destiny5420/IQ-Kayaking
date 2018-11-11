@@ -9,6 +9,7 @@ public class GameLogic : MonoBehaviour
 
     [SerializeField] QuestionController m_clsQuestionController;
     [SerializeField] AnswerShowController m_clsAnswerShowController;
+    [SerializeField] EndPanelController m_clsEndPanelController;
 
     [SerializeField] List<LevelBlock> m_lisLevelBlocks;
     int m_iCurIndex;
@@ -63,5 +64,10 @@ public class GameLogic : MonoBehaviour
     public void PlayAnswerAnimation(bool v_isCorrect)
     {
         m_clsAnswerShowController.Play(v_isCorrect);
+    }
+
+    public void ShowEndPanel()
+    {
+        m_clsEndPanelController.Play();
     }
 }
