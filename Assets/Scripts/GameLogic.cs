@@ -8,6 +8,7 @@ public class GameLogic : MonoBehaviour
     public static GameLogic GetInstance() { return instance; }
 
     [SerializeField] QuestionController m_clsQuestionController;
+    [SerializeField] AnswerShowController m_clsAnswerShowController;
 
     [SerializeField] List<LevelBlock> m_lisLevelBlocks;
     int m_iCurIndex;
@@ -44,5 +45,10 @@ public class GameLogic : MonoBehaviour
 
         if (m_iCurIndex >= m_lisLevelBlocks.Count)
             m_iCurIndex = 0;
+    }
+
+    public void PlayAnswerAnimation(bool v_isCorrect)
+    {
+        m_clsAnswerShowController.Play(v_isCorrect);
     }
 }

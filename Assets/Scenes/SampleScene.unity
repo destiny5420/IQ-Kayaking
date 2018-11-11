@@ -11973,6 +11973,11 @@ Prefab:
       propertyPath: m_lisLevelBlocks.Array.data[7]
       value: 
       objectReference: {fileID: 21360325}
+    - target: {fileID: 114061477902291314, guid: 0d1af59d01a5244c68f38f3464d97667,
+        type: 2}
+      propertyPath: m_clsAnswerShowController
+      value: 
+      objectReference: {fileID: 2120539721}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d1af59d01a5244c68f38f3464d97667, type: 2}
   m_IsPrefabAsset: 0
@@ -12827,6 +12832,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47751a7d21900405d9fa4f947417142c, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &2120539721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114570828963036094, guid: 47751a7d21900405d9fa4f947417142c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2120539720}
+  m_Script: {fileID: 11500000, guid: 0b27aef31eb5f430aab64de8ccb17d8f, type: 3}
 --- !u!4 &2125011647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4740640326202206, guid: bc5d3b4facc7048ea91ee9b42ad0b174,
