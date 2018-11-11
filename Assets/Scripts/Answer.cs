@@ -55,8 +55,6 @@ public class Answer : MonoBehaviour
         m_txtScoreIQ.text = string.Format(iValueIQ.ToString());
         float fPrecent = iValueIQ / 180.0f;
         m_img_iq_bar.fillAmount = fPrecent;
-
-        Debug.Log(string.Format("IQ value: {0} / Precent: {1}", iValueIQ, fPrecent));
     }
 
     public void SetImage(Sprite r_sprite, bool v_corrent)

@@ -13,6 +13,8 @@ public class GameLogic : MonoBehaviour
     [SerializeField] List<LevelBlock> m_lisLevelBlocks;
     int m_iCurIndex;
 
+    bool m_bTimeScale;
+
     void Awake()
     {
         instance = this;
@@ -30,8 +32,19 @@ public class GameLogic : MonoBehaviour
 
 	void Update () 
     {
-		
-	}
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (m_bTimeScale == false)
+            {
+                Time.timeScale = 0.0f;
+                m_bTimeScale = true;
+            }else
+            {
+                Time.timeScale = 1.0f;
+                m_bTimeScale = false;
+            }
+        }
+    }
 
     public void ChangeQuestion()
     {
