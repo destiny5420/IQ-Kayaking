@@ -64,6 +64,10 @@ public class DataManager : MonoBehaviour
             "哪個字母在鍵盤上有凸起? (H)(J)",
             "蘋果的缺口是哪一邊? (左)(右)",
             "√9 + √16 + √25 = ? (12)(14)",
+            "鋁箔紙應該用哪面朝向光熱處? (亮面)(沒差)",
+            "北極熊的腳掌其實_____? (很臭)(沒味道)",
+            "無尾熊和樹懶誰睡覺的時間多? (無尾熊)(樹懶)",
+            "所有的工蟻都是勤勞的嗎? (是)(否)"
         };
 
         m_lisHistoryAnswer = new List<int>();
@@ -137,5 +141,10 @@ public class DataManager : MonoBehaviour
     public int GetValueIQ()
     {
         return iCurValueForIQ;
+    }
+
+    public void ResetData()
+    {
+        Init();
     }
 }

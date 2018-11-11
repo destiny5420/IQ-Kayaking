@@ -91,3 +91,15 @@ MonoBehaviour:
   - m_spriteAry:
     - {fileID: 21300000, guid: 3eff82106e4e24f9298bc7ed5f1a1fd3, type: 3}
     - {fileID: 21300000, guid: bfc26e6613cde43219fa1f1cd564ad05, type: 3}
+  - m_spriteAry:
+    - {fileID: 21300000, guid: df35088e36b6345be8d5fc10a2833f35, type: 3}
+    - {fileID: 21300000, guid: 3a3780b6eebb84caaa4e97f7fd6de35e, type: 3}
+  - m_spriteAry:
+    - {fileID: 21300000, guid: c8a5641547d4445cea59d84eea52bc9b, type: 3}
+    - {fileID: 21300000, guid: 17351b85e612e4f339dd480a1db9c9ad, type: 3}
+  - m_spriteAry:
+    - {fileID: 21300000, guid: 68d6b98cf7416497b9be250f797f4400, type: 3}
+    - {fileID: 21300000, guid: 0bcdd3335954442a8a64c42c0d23ecc9, type: 3}
+  - m_spriteAry:
+    - {fileID: 21300000, guid: b201b60da0ea64112af1ed21e32ad59f, type: 3}
+    - {fileID: 21300000, guid: 7362f401dd355408ab5e1b4d9cc351be, type: 3}

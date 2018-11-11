@@ -46,6 +46,8 @@ public class EndPanelController : MonoBehaviour
         m_btnReturn.interactable = true;
         m_txtScore.text = DataManager.GetInstance().GetValueIQ().ToString();
 
+        DataManager.GetInstance().ResetData();
+
     }
 
     public void OnReturnButton()
