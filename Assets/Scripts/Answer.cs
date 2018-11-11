@@ -32,6 +32,8 @@ public class Answer : MonoBehaviour
                 HandleCorrect();
             else
                 HandleMistake();
+
+            GameLogic.GetInstance().PlayAnswerAnimation(Correct);
         }
 	}
 
